@@ -1,5 +1,21 @@
 # Flutter Packages
 
+## Androidのために独自カスタムしてます
+
+* pubspec.yaml のパス
+
+そのままだと、公式のwebview_flutter_androidプラグインを参考にしてしまうため、
+`packages/webview_flutter/webview_flutter/pubspec.yaml` も編集して編集したGitHubを参照させている。
+
+### 実際に編集したファイル
+
+* Javaファイルのパス
+
+```
+packages/webview_flutter/webview_flutter_android/android/src/main/java/io/flutter/plugins/webviewflutter/JavaScriptChannel.java
+```
+
+
 [![Build Status](https://api.cirrus-ci.com/github/flutter/packages.svg)](https://cirrus-ci.com/github/flutter/packages/main)
 [![Release Status](https://github.com/flutter/packages/actions/workflows/release.yml/badge.svg)](https://github.com/flutter/packages/actions/workflows/release.yml)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/flutter/packages/badge)](https://deps.dev/project/github/flutter%2Fpackages)
